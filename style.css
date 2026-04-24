@@ -1,7 +1,9 @@
 body {
     text-align: center;
+    background-color: black;
 }
 ul {
-    margin: auto;
-    padding: auto;
+  list-style: none;
+  padding: 0;   /* opcional, remove o recuo */
+  margin: 0;    /* opcional */
 }
