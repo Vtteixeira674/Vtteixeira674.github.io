@@ -1,1 +1,106 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recursos Multimídia — Cap. 4 / Ativ. 4</title>
+  </head>
+  <body>
+    <header>Pagina Multimidia</header>
+    <main>
+      <section>
+        <figure>
+          <video
+            controls,width="800"
+            height="450"
+            poster="poster-aula.jpg"
+            preload="metadata"
+          >
+            <source src="video-aula.mp4" type="video/mp4" />
+            <source src="video-aula.webm" type="video/webm" />
+            <track
+              kind="subtitles"
+              srclang="pt"
+              label="Portugues"
+              src="legendas/aula-html.vtt"
+              default
+            />
+            <p>
+              Seu navegador não suporta vídeos HTML5
+              <a href="videos/aula-html.mp4">
+                Clique aqui para baixar o vídeo.
+              </a>
+            </p>
+          </video>
+          <figcaption>
+            Aula de programaçao basica, Fonte: Gustavo Guanabara
+          </figcaption>
+        </figure>
+      </section>
+      <section>
+        <figure>
+          <audio controls preload="metadata">
+            <source src="audios/podcast-html.mp3" type="audio/mpeg" />
+            <source src="audios/podcast-html.ogg" type="audio/ogg" />
+            <p>
+              Seu navegador não suporta áudio HTML5.
+              <a href="audios/podcast-html.mp3">
+                Clique aqui para baixar o áudio.
+              </a>
+            </p>
+          </audio>
+          <figcaption>
+            Episódio 01 — Introdução ao HTML.
+            <a href="transcricao.html"> Ler transcrição completa </a>
+          </figcaption>
+        </figure>
+      </section>
+      <section>
+        <figure>
+          <iframe
+            width="800"
+            height="450"
+            src="https://www.youtube-nocookie.com/embed/3oSIqIqzN3M"
+            title="Curso de HTML Completo para Iniciantes"
+            loading="lazy"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+            "
+            allowfullscreen
+          >
+          </iframe>
+          <figcaption>
+            Vídeo: Curso de HTML Completo para Iniciantes. Canal: Curso em
+            Vídeo. Plataforma: YouTube.
+          </figcaption>
+        </figure>
+      </section>
+      <section>
+        <figure>
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/banner-wide.jpg" />
+            <img
+              src="img/banner-mobile.jpg"
+              alt="Banner de programação exibido em diferentes formatos para desktop e celular"
+              width="400"
+              height="250"
+            />
+          </picture>
+          <figcaption>
+            Banner responsivo adaptado para diferentes tamanhos de tela.
+          </figcaption>
+        </figure>
+      </section>
+    </main>
+    <p>
+      <a href="../index.html">Volte para a pagina principal</a>
+    </p>
+    <footer>Jose Victor , 2026307258 , 21/05/2026</footer>
+  </body>
+</html>
 
