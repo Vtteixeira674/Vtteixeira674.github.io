@@ -1,1 +1,115 @@
-
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <header>
+      <h1>Formulario de Matricula</h1>
+      <h4>* Campos obrigatorio</h4>
+    </header>
+    <main>
+      <form action="https://httpbin.org/post" method="post">
+        <fieldset>
+          <legend>Dados pessoais</legend>
+          <div>
+            <label for="nome"> * Nome Completo:</label>
+            <input
+              type="text"
+              id="nome"
+              required
+              minlength="5"
+              maxlength="100"
+              name="nome"
+            />
+          </div>
+          <div>
+            <label for="cpf">* CPF:</label>
+            <input
+              type="text"
+              id="cpf"
+              name="cpf"
+              required
+              pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+              placeholder="000.000.000-00"
+              title="CPF no formato 000.000.000-00"
+            />
+          </div>
+          <div>
+            <label for="telefone">Telefone:</label>
+            <input
+              type="tel"
+              id="telefone"
+              name="telefone"
+              pattern="\(\d{2}\)\s\d{4,5}-\d{4}"
+              placeholder="(82) 99999-9999"
+            />
+          </div>
+          <div>
+            <label for="email">* E-mail:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+        </fieldset>
+        <fieldset>
+            <legend>Dados Academicos</legend>
+            <label for="curso">Curso:</label>
+            <select id="curso" name="curso" required>
+                <optgroup label="Computação">
+                    <option value="SI">-Sistemas de Informação</option>
+                    <option value="CC">-Ciência da Computação</option>
+                    <option value="EC">-Engenharia da Computação</option>
+                </optgroup>
+                <optgroup label="Gestão">
+                    <option value="ADM">Administração</option>
+                    <option value="CienciasC">Ciencias Contabeis</option>
+                </optgroup>
+            </select>
+            <legend>Periodo:</legend>
+            <label for="periodo">
+                <input type="radio" name="periodo" value="manha">Manha
+            </label>
+            <label>
+                <input type="radio" name="periodo" value="tarde">Tarde
+            </label>
+            <label>
+                <input type="radio" name="periodo" value="Noite">Noite
+            </label>
+        </br>
+            <label for="ano_ingresso">Ano de ingresso pretendido</label>
+            <input type="number" name="ano_ingresso" min="2025" max="2030" required>
+        </fieldset>
+        <fieldset>
+            <legend>Áreas de Interesse</legend>
+            <fieldset>
+                <label>
+                    <input type="checkbox" name="Interesses">Desenvolvimento Web
+                </label>
+            </br>
+                <label>
+                    <input type="checkbox" name="Interesses">Banco de Dados
+                </label>
+            </br>
+                <label>
+                    <input type="checkbox" name="Interesses">Inteligencia Artificial
+                </label>
+            </br>
+                <label>
+                    <input type="checkbox" name="Interesses">Segurança Da Informaçao
+                </label>
+            </br>
+                <label>
+                    <input type="checkbox" name="Interesses">Infraestrutura
+                </label>                
+            </fieldset>
+        </fieldset>
+        <button type="submit">Solicitar Matricula</button>
+        <button type="reset">Limpar Formulario</button>
+      </form>
+    </main>
+    <p>
+        <a href="../index.html">Volte para a pagina</a>
+    </p>
+  </body>
+</html>
