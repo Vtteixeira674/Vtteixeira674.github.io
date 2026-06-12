@@ -1,0 +1,36 @@
+body {
+    background-color:#f4f4f4;
+    color: #555555;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    min-height: 100vh;
+}
+fieldset {
+    border-radius: 20px;
+    border: solid;
+}
+#enviar {
+    border-radius: 50px;
+
+}
+#enviar:hover {
+    border-radius: 10px;
+    padding: 5px;
+    background-color: blue;
+    color: white;
+}
+h1 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+h4 {
+    text-align: center;
+}
+input {
+    border-radius: 20px;
+}
+footer {
+    margin-top: auto;
+}
