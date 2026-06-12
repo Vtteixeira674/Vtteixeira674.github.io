@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senac</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Inscriçao Senac</h1>
+        <h3>Inscricões para cursos no senac gratuitos com objetivo intelectual</h3>
+        <h4>Inscrição para cursos</h4>
+    </header>
+    <form>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+             <div>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome">
+             </div>
+             <div>
+                <label for="E-mail">Email</label>
+                <input type="email" id="E-mail">
+             </div>
+             <div>
+                <label for="senha">Senha</label>
+                <input type="password"id="senha">
+             </div>
+             <div>
+                <label for="nascimento">Data de nascimento</label>
+                <input type="date" id="nascimento">
+             </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Cursos</legend>    
+            <div>
+            <label for="cursos">Cursos</label>
+            <select name="cursos">
+                <option value="Vendas">Vendas</option>
+                <option value="ADM">Administração</option>
+                <option value="Linguas">Linguas Estrangeiras</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Gastronomia">Gastronomia</option>
+            </select>
+            <label for="periodos">Periodo</label>
+            <input type="radio" id="periodos" name="periodos">Manhã
+            <input type="radio" id="periodos" name="periodos">Tarde
+            <input type="radio" id="periodos" name="periodos">Noite
+            </div>
+            <div>
+                <label for="comentario">Comentario</label>
+                <br>
+                <textarea id="comentario" name="comentario"></textarea>
+            </div>
+        </fieldset>
+        <br>
+        <div>
+            <input type="checkbox" id="termos">
+            <label for="termos">Aceito Termos de Uso</label>
+            <input type="checkbox" id="termos">
+            <label for="termos">Não aceito Termos de Uso</label>
+        </div>
+        <br>
+        </div>
+        <br>
+        <div>
+            <label for="enviar">Enviar formulario</label>
+            <input type="button" id="enviar" value="Enviar">
+        </div>
+        <footer>
+            <p>Integrantes: Jose Victor e Pietro Lucas</p>
+            <p>Data: 11/06/2026</p>
+            <p>Disciplina: Programaçao Web</p>
+        </footer>
+</body>
+</html>
