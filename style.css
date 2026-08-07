@@ -1,9 +1,23 @@
 body {
-    text-align: center;
-    text-decoration-color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-left: 30px;
+  background-color: bisque;
+  color: grey;
 }
-ul {
-  list-style: none;
-  padding: 0;   /* opcional, remove o recuo */
-  margin: 0;    /* opcional */
+#foto {
+  border-radius: 200px;
+  text-align: center;
+}
+#topo {
+  background-color: orange;
+  color: antiquewhite;
+  
+}
+.Atividade {
+  color: darkblue;
+  background-color: antiquewhite;
+  width: 1500px;
+}
+.inicio {
+  text-align: center;
 }
